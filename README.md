@@ -1,8 +1,11 @@
 # 🎥 Face & Hand Authentication Video Player
 
-<div style="font-family: 'Edu NSW ACT Hand', cursive; font-size: 1.2em;">
 A secure video player that requires both face and hand authentication before playing videos.
-</div>
+
+## 👨‍💻 Developer
+**MD SAHADAT HOSSAIN**  
+Web Developer & Data Analyst  
+[Portfolio](https://developersahadat.vercel.app/) | [GitHub](https://github.com/davsahadat)
 
 ## ✨ Features
 
@@ -113,20 +116,12 @@ class SecureFileManager:
         # Authentication and playback
 ```
 
-## 🎨 Customization
-
-### Font Support
-The system uses the beautiful "Edu NSW ACT Hand" font:
-- Font path: `C:\Users\hp\Desktop\facevar\EduNSWACTHandPre-VariableFont_wght.ttf`
-
 ## 🙏 Acknowledgments
 
 - MediaPipe for face and hand detection
 - OpenCV for computer vision
-- Edu NSW ACT Hand font for typography
+- Developed by [MD SAHADAT HOSSAIN](https://developersahadat.vercel.app/)
 
 ---
 
-<div style="font-family: 'Edu NSW ACT Hand', cursive; font-size: 1.1em; text-align: center; margin-top: 2em;">
-Made with ❤️ for secure video access
-</div> 
+Made with ❤️ by [MD SAHADAT HOSSAIN](https://developersahadat.vercel.app/) 
