@@ -1,46 +1,34 @@
-# 🎥 Secure Face & Hand Authentication System
+# 🎥 Face & Hand Authentication Video Player
 
 <div style="font-family: 'Edu NSW ACT Hand', cursive; font-size: 1.2em;">
-A sophisticated security system that combines face and hand detection with secure file management and video playback capabilities.
+A secure video player that requires both face and hand authentication before playing videos.
 </div>
 
 ## ✨ Features
 
-### 🔐 Authentication
+### 🔐 Dual Authentication
 - **Face Detection** 👤
   - Real-time face mesh detection
-  - High-accuracy facial landmark tracking
-  - Visual feedback with mesh overlay
+  - High-accuracy facial landmarks
+  - Visual mesh overlay feedback
 
 - **Hand Tracking** ✋
   - Dual-hand detection support
-  - Real-time hand landmark tracking
-  - Gesture recognition capabilities
-
-### 📁 File Management
-- **Secure File Operations** 🔒
-  - One-time authentication for extended access
-  - Protected file storage system
-  - Intuitive file management interface
-
-- **File Operations** 📂
-  - Add files with secure copying
-  - Delete files with confirmation
-  - List files with size information
-  - Direct file opening capability
+  - Real-time hand landmarks
+  - Visual connection feedback
 
 ### 🎬 Video Playback
 - **Secure Video Access** 🎥
   - Automatic video playback after authentication
-  - Support for multiple video formats
-  - Fallback playback options
+  - Default video path: `C:\Users\hp\Desktop\facevar\vid.mp4`
+  - Fallback to VLC player if needed
 
 ## 🛠️ Technical Requirements
 
 ### System Requirements
 - Python 3.7 or higher
-- Webcam for face and hand detection
-- Windows/Linux/MacOS support
+- Webcam for authentication
+- Windows OS (for default video player)
 
 ### Python Dependencies
 ```bash
@@ -51,18 +39,12 @@ numpy==1.26.2
 
 ## 🚀 Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/secure-auth-system.git
-cd secure-auth-system
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the system:
+2. Run the program:
 ```bash
 python file_manager.py
 ```
@@ -73,58 +55,78 @@ python file_manager.py
 1. Launch the application
 2. Look at the camera
 3. Show your hands in the frame
-4. Wait for authentication (2 seconds)
-5. Access granted! 🎉
+4. Wait for 2 seconds of successful detection
+5. Video will play automatically! 🎉
 
-### File Management
-- Press `l` to list files
-- Press `a` to add files
-- Press `d` to delete files
-- Press `o` to open files
-- Press `f` to open folder
-- Press `q` to quit
+### Authentication Feedback
+- "Face Detected" - When your face is recognized
+- "Hand Detected" - When your hands are visible
+- "Authentication Complete!" - When both are detected
+- "Please show both face and hands" - When either is missing
 
 ### Video Playback
-- Automatic playback after authentication
-- Video path: `C:\Users\hp\Desktop\facevar\vid.mp4`
-- Supports multiple video formats
+- Automatic playback after successful authentication
+- Uses system default video player
+- Falls back to VLC if default player fails
 
 ## 🔒 Security Features
 
-- **One-Time Authentication** 🔐
-  - 5-minute authentication window
-  - Face and hand verification
-  - Secure session management
+- **Dual Authentication** 🔐
+  - Requires both face AND hands
+  - 2-second verification period
+  - Real-time visual feedback
 
-- **Protected Operations** 🛡️
-  - Secure file handling
-  - Protected video access
-  - Safe file deletion
+- **Protected Video Access** 🛡️
+  - No video access without authentication
+  - Secure video path handling
+  - Multiple playback options
+
+## 🎨 Visual Feedback
+
+The system provides clear visual feedback during authentication:
+- Green face mesh overlay
+- Hand landmark connections
+- Status text messages
+- Color-coded authentication status
+
+## ⚙️ Code Structure
+
+```python
+class SecureFileManager:
+    def __init__(self):
+        # Initialize face and hand detection
+        # Set up video path
+        # Initialize authentication state
+
+    def authenticate(self):
+        # Handle face and hand detection
+        # Provide visual feedback
+        # Manage authentication state
+
+    def play_video(self):
+        # Handle video playback
+        # Manage fallback options
+        # Error handling
+
+    def run(self):
+        # Main program flow
+        # Authentication and playback
+```
 
 ## 🎨 Customization
 
 ### Font Support
-The system uses the beautiful "Edu NSW ACT Hand" font for enhanced visual appeal:
+The system uses the beautiful "Edu NSW ACT Hand" font:
 - Font path: `C:\Users\hp\Desktop\facevar\EduNSWACTHandPre-VariableFont_wght.ttf`
-- Customizable font weights
-- Elegant typography
-
-## 🤝 Contributing
-
-We welcome contributions! Please feel free to submit a Pull Request.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
 - MediaPipe for face and hand detection
-- OpenCV for computer vision capabilities
-- Edu NSW ACT Hand font for beautiful typography
+- OpenCV for computer vision
+- Edu NSW ACT Hand font for typography
 
 ---
 
 <div style="font-family: 'Edu NSW ACT Hand', cursive; font-size: 1.1em; text-align: center; margin-top: 2em;">
-Made with ❤️ for secure authentication
+Made with ❤️ for secure video access
 </div> 
